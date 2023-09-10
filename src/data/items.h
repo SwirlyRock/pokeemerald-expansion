@@ -6181,9 +6181,9 @@ const struct Item gItems[] =
         .price = 5000,
         .holdEffect = HOLD_EFFECT_REPEL,
         .description = sCleanseTagDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .fieldUseFunc = ItemUseOutOfBattle_CleanseTag,
         .flingPower = 30,
     },
 
