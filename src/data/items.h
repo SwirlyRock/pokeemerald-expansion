@@ -10356,4 +10356,16 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
     },
+
+    [ITEM_ENDLESS_CANDY] =
+    {
+        .name = _("Endless Candy"),
+        .itemId = ITEM_ENDLESS_CANDY,
+        .description = sRareCandyDesc,
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+    },
 };
