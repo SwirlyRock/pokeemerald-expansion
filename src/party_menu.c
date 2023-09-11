@@ -5290,6 +5290,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     bool8 cannotUseEffect;
     u8 holdEffectParam = ItemId_GetHoldEffectParam(*itemPtr);
 
+     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
     if (GetMonData(mon, MON_DATA_LEVEL) != MAX_LEVEL
     && !levelCappedNuzlocke(GetMonData(mon, MON_DATA_LEVEL)))
     {
