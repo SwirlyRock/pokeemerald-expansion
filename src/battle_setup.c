@@ -1916,7 +1916,7 @@ u16 CountBattledRematchTeams(u16 trainerId)
 static u8 getLevelCap(void){
     u8 levelCap = 0;
     u16 nextLeader, i;
-    const struct TrainerMonItemCustomMoves *partyData;
+    const struct TrainerMonCustomized *partyData;
     if (FlagGet(FLAG_IS_CHAMPION))
         return 100;
     if (!FlagGet(FLAG_BADGE01_GET))
@@ -1938,7 +1938,7 @@ static u8 getLevelCap(void){
     else if (!FlagGet(FLAG_IS_CHAMPION))
         nextLeader = TRAINER_WALLACE;
 
-    partyData = gTrainers[nextLeader].party.ItemCustomMoves;
+    partyData = gTrainers[nextLeader].party.EverythingCustomized;
     for (i = 0; i < gTrainers[nextLeader].partySize; i++){
         if (partyData[i].lvl > levelCap)
             levelCap = partyData[i].lvl;
