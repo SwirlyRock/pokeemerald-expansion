@@ -1653,7 +1653,7 @@ static void Task_HandleInput(u8 taskId)
         {
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
         {     
-            BufferIvOrEvStats(2);
+            BufferIvOrEvStats(1);
         }
         }
         else if (gMain.newKeys & L_BUTTON)
@@ -4315,7 +4315,20 @@ static void BufferIvOrEvStats(u8 mode)
     switch (mode)
     {
     case 0:
+        BufferStat(gStringVar1, 0, hp, 0, 7);
+        BufferStat(gStringVar2, 0, atk, 1, 7);
+        BufferStat(gStringVar3, 0, def, 2, 7);
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayoutIVEV);
+        PrintLeftColumnStats();
+
+        BufferStat(gStringVar1, 0, spA, 0, 3);
+        BufferStat(gStringVar2, 0, spD, 1, 3);
+        BufferStat(gStringVar3, 0, spe, 2, 3);
+        DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
+        PrintRightColumnStats();
+        break;
     case 1:
+    case 2:
     default:
         BufferStat(currHPString, 0, hp, 0, 3);
         BufferStat(gStringVar1, 0, hp2, 1, 3);
