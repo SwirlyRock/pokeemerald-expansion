@@ -3366,20 +3366,59 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
 
 static const struct TrainerMonCustomized sParty_Roxanne1[] = {
     {
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+        .species = SPECIES_TYRUNT,
+        .ability = ABILITY_STRONG_JAW,
+        .heldItem = ITEM_EXPERT_BELT,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 17,
+        .moves = {MOVE_THUNDER_FANG, MOVE_FIRE_FANG, MOVE_ROCK_TOMB, MOVE_ICE_FANG},
+        .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
     },
     {
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+        .species = SPECIES_OMANYTE,
+        .ability = ABILITY_WEAK_ARMOR,
+        .heldItem = ITEM_RINDO_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 18,
+        .moves = {MOVE_AURORA_BEAM, MOVE_ANCIENT_POWER, MOVE_BRINE},
+        .nature = TRAINER_PARTY_NATURE(NATURE_MODEST),
     },
     {
-    .lvl = 15,
-    .species = SPECIES_NOSEPASS,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
-    }
+        .species = SPECIES_AMAURA,
+        .ability = ABILITY_REFRIGERATE,
+        .heldItem = ITEM_NEVER_MELT_ICE,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 18,
+        .moves = {MOVE_BODY_PRESS, MOVE_ZEN_HEADBUTT, MOVE_AQUA_TAIL},
+        .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
+    },
+    {
+        .species = SPECIES_CRANIDOS,
+        .ability = ABILITY_SHEER_FORCE,
+        .heldItem = ITEM_LUM_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 17,
+        .moves = {MOVE_SMACK_DOWN, MOVE_ZEN_HEADBUTT, MOVE_THUNDER_PUNCH, MOVE_IRON_HEAD},
+        .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
+    },
+    {
+        .species = SPECIES_LILEEP,
+        .ability = ABILITY_STORM_DRAIN,
+        .heldItem = ITEM_LEFTOVERS,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 17,
+        .moves = {MOVE_ANCIENT_POWER, MOVE_INFESTATION, MOVE_GIGA_DRAIN, MOVE_PROTECT},
+        .nature = TRAINER_PARTY_NATURE(NATURE_BOLD),
+    },
+    {
+        .species = SPECIES_NOSEPASS,
+        .ability = ABILITY_SAND_FORCE,
+        .heldItem = ITEM_WEAKNESS_POLICY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 19,
+        .moves = {MOVE_ROCK_TOMB, MOVE_BULLDOZE, MOVE_DAZZLING_GLEAM, MOVE_ICE_PUNCH},
+        .nature = TRAINER_PARTY_NATURE(NATURE_SASSY),
+    },        
 };
 
 static const struct TrainerMonCustomized sParty_Brawly1[] = {
