@@ -3389,7 +3389,7 @@ static const struct TrainerMonCustomized sParty_Roxanne1[] = {
         .heldItem = ITEM_NEVER_MELT_ICE,
         .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
         .lvl = 18,
-        .moves = {MOVE_BODY_PRESS, MOVE_ZEN_HEADBUTT, MOVE_AQUA_TAIL},
+        .moves = {MOVE_BODY_SLAM, MOVE_ZEN_HEADBUTT, MOVE_AQUA_TAIL},
         .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
     },
     {
