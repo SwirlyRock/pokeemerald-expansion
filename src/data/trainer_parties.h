@@ -4178,14 +4178,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Shelby5[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Calvin1[] = {
+static const struct TrainerMonCustomized sParty_Calvin1[] = {
     {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_POOCHYENA,
-    }
+        .species = SPECIES_RATTATA,
+        .ability = ABILITY_RUN_AWAY,
+        .heldItem = ITEM_FOCUS_SASH,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 1,
+        .moves = {MOVE_ENDEAVOR, MOVE_QUICK_ATTACK},
+        .nature = TRAINER_PARTY_NATURE(NATURE_BRAVE),
+    },
 };
-
 static const struct TrainerMonNoItemDefaultMoves sParty_Billy[] = {
     {
     .iv = 0,
@@ -4360,17 +4363,34 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Eddie[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Allen[] = {
+static const struct TrainerMonCustomized sParty_Allen[] = {
     {
-    .iv = 0,
-    .lvl = 4,
-    .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_ROSELIA,
+        .ability = ABILITY_POISON_POINT,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 15,
+        .moves = {MOVE_MEGA_DRAIN, MOVE_VENOSHOCK},
+        .nature = TRAINER_PARTY_NATURE(NATURE_SERIOUS),
     },
     {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_TAILLOW,
-    }
+        .species = SPECIES_WAILMER,
+        .ability = ABILITY_OBLIVIOUS,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 15,
+        .moves = {MOVE_ROLLOUT, MOVE_ICY_WIND, MOVE_BRINE},
+        .nature = TRAINER_PARTY_NATURE(NATURE_SERIOUS),
+    },
+    {
+        .species = SPECIES_LARVESTA,
+        .ability = ABILITY_SWARM,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 15,
+        .moves = {MOVE_FLAME_CHARGE, MOVE_BUG_BITE},
+        .nature = TRAINER_PARTY_NATURE(NATURE_SERIOUS),
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Timmy[] = {
@@ -7954,17 +7974,25 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMtChimney[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Tiana[] = {
+static const struct TrainerMonCustomized sParty_Tiana[] = {
     {
-    .iv = 0,
-    .lvl = 4,
-    .species = SPECIES_ZIGZAGOON,
+        .species = SPECIES_CUTIEFLY,
+        .ability = ABILITY_SERENE_GRACE,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 15,
+        .moves = {MOVE_STICKY_WEB, MOVE_CHARM, MOVE_CAPTIVATE},
+        .nature = TRAINER_PARTY_NATURE(NATURE_TIMID),
     },
     {
-    .iv = 0,
-    .lvl = 4,
-    .species = SPECIES_SHROOMISH,
-    }
+        .species = SPECIES_DUNSPARCE,
+        .ability = ABILITY_SERENE_GRACE,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 15,
+        .moves = {MOVE_STOMP, MOVE_BITE, MOVE_HEART_STAMP},
+        .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Haley1[] = {
@@ -8110,17 +8138,34 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Crissy[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rick[] = {
+static const struct TrainerMonCustomized sParty_Rick[] = {
     {
-    .iv = 0,
-    .lvl = 4,
-    .species = SPECIES_WURMPLE,
+        .species = SPECIES_KAKUNA,
+        .ability = ABILITY_SHED_SKIN,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 14,
+        .moves = {MOVE_BUG_BITE, MOVE_POISON_STING},
+        .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT),
     },
     {
-    .iv = 0,
-    .lvl = 4,
-    .species = SPECIES_WURMPLE,
-    }
+        .species = SPECIES_METAPOD,
+        .ability = ABILITY_SHED_SKIN,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 14,
+        .moves = {MOVE_IRON_DEFENSE, MOVE_BODY_PRESS, MOVE_REST},
+        .nature = TRAINER_PARTY_NATURE(NATURE_BOLD),
+    },
+    {
+        .species = SPECIES_SPEWPA,
+        .ability = ABILITY_SHED_SKIN,
+        .heldItem = ITEM_ORAN_BERRY,
+        .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
+        .lvl = 14,
+        .moves = {MOVE_STRUGGLE_BUG, MOVE_SLEEP_POWDER},
+        .nature = TRAINER_PARTY_NATURE(NATURE_BOLD),
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Lyle[] = {

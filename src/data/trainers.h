@@ -3189,7 +3189,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ROXANNE"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
         .party = EVERYTHING_CUSTOMIZED(sParty_Roxanne1),
     },
 
@@ -3825,8 +3825,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Calvin1),
+        .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
+        .party = EVERYTHING_CUSTOMIZED(sParty_Calvin1),
     },
 
     [TRAINER_BILLY] =
@@ -4005,8 +4005,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ALLEN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Allen),
+        .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
+        .party = EVERYTHING_CUSTOMIZED(sParty_Allen),
     },
 
     [TRAINER_TIMMY] =
@@ -7245,8 +7245,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("TIANA"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Tiana),
+        .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
+        .party = EVERYTHING_CUSTOMIZED(sParty_Tiana),
     },
 
     [TRAINER_HALEY_1] =
@@ -7390,7 +7390,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Rick),
+        .party = EVERYTHING_CUSTOMIZED(sParty_Rick),
     },
 
     [TRAINER_LYLE] =
