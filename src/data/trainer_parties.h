@@ -7978,7 +7978,7 @@ static const struct TrainerMonCustomized sParty_Tiana[] = {
     {
         .species = SPECIES_CUTIEFLY,
         .ability = ABILITY_SERENE_GRACE,
-        .heldItem = ITEM_ORAN_BERRY,
+        .heldItem = ITEM_FOCUS_SASH,
         .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
         .lvl = 15,
         .moves = {MOVE_STICKY_WEB, MOVE_CHARM, MOVE_CAPTIVATE},
