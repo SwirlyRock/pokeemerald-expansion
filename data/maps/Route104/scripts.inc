@@ -997,6 +997,16 @@ Route104_EventScript_Darian::
 	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
+	
+Route104_EventScript_Dawson::
+	trainerbattle_single TRAINER_DAWSON, Route116_Text_DawsonIntro, Route116_Text_DawsonDefeat
+	msgbox Route116_Text_DawsonPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route104_EventScript_Sarah::
+	trainerbattle_single TRAINER_SARAH, Route116_Text_SarahIntro, Route116_Text_SarahDefeat
+	msgbox Route116_Text_SarahPostBattle, MSGBOX_AUTOCLOSE
+	end
 
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"

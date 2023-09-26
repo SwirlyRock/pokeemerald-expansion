@@ -7989,7 +7989,7 @@ static const struct TrainerMonCustomized sParty_Tiana[] = {
         .ability = ABILITY_SERENE_GRACE,
         .heldItem = ITEM_ORAN_BERRY,
         .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
-        .lvl = 15,
+        .lvl = 17,
         .moves = {MOVE_STOMP, MOVE_BITE, MOVE_HEART_STAMP},
         .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY),
     },
