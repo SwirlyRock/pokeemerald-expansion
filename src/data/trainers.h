@@ -129,7 +129,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
-        .party = EVERYTHING_CUSTOMIZED(sParty_GruntPetalburgWoods),
+        .party = TRAINER_PARTY(sParty_GruntPetalburgWoods),
     },
 
     [TRAINER_MARCEL] =
@@ -1377,7 +1377,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
-        .party = EVERYTHING_CUSTOMIZED(sParty_Cindy1),
+        .party = TRAINER_PARTY(sParty_Cindy1),
     },
 
     [TRAINER_DAPHNE] =
@@ -1641,7 +1641,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
-        .party = EVERYTHING_CUSTOMIZED(sParty_Winston1),
+        .party = TRAINER_PARTY(sParty_Winston1),
     },
 
     [TRAINER_MOLLIE] =
@@ -3189,7 +3189,7 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_OMNISCIENT | AI_FLAG_TRY_TO_FAINT | AI_FLAG_RISKY | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
-        .party = EVERYTHING_CUSTOMIZED(sParty_Roxanne1),
+        .party = TRAINER_PARTY(sParty_Roxanne1),
     },
 
     [TRAINER_BRAWLY_1] =
